@@ -14,18 +14,18 @@ class Pair{
 }
 public class DetectCycleInUnDirectedGraph {
 
-//
-//    // 1. BFS
-//      boolean detectCycle(int V, List<List<Integer>> adj) {
-//    // Write your code here.
-//    int[] visited = new int[V+1];
-//    for(int i=0; i<V; i++){
-//        if(visited[i]!=1 && BFS(adj, visited, i)) return true;
+
+    // 1. BFS
+//    boolean detectCycle(int V, List<List<Integer>> adj) {
+//        // Write your code here.
+//        int[] visited = new int[V];
+//        for(int i=0; i<V; i++){
+//            if(visited[i]!=1 && BFS(adj, visited, i)) return true;
+//        }
+//        return false;
 //    }
-//    return false;
-//}
 //
-//    boolean BFS(List<List<Integer>> adj, int[] visited, int startNode){
+//    public boolean BFS(List<List<Integer>> adj, int[] visited, int startNode){
 //        Queue<Pair> q = new LinkedList<>();
 //        q.add(new Pair(startNode, -1));
 //        visited[startNode] = 1;
@@ -35,7 +35,7 @@ public class DetectCycleInUnDirectedGraph {
 //                if(visited[i]!=1){
 //                    q.add(new Pair(i, node.node));
 //                    visited[i] = 1;
-//                }else if(node.parent!=node.node) return true;
+//                }else if(node.parent!=i) return true;
 //            }
 //        }
 //        return false;

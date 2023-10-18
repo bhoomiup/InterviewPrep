@@ -29,7 +29,7 @@ public class NearestZero {
             }
         }
         int[] delRow = {0, 0, 1, -1};
-        int[] delCol = {1, -1, 0, 1};
+        int[] delCol = {1, -1, 0, 0};
         BFS( mat, visited, op, q, delRow, delCol);
         return op;
 
