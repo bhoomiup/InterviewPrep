@@ -31,7 +31,7 @@ public class CourseScheduleII {
                 if(inDegrees[i]==0) q.add(i);
             }
         }
-        if(op.size()==numCourses) return new int[0];
+        if(op.size()!=numCourses) return new int[0];
         int[] op1 = new int[op.size()];
         for(int i = 0; i < op.size(); i++) op1[i] = op.get(i);
         return op1;

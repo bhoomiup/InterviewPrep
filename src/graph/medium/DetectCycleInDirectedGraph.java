@@ -52,7 +52,7 @@ public class DetectCycleInDirectedGraph {
         int[] inDegrees = new int[n];
         for(int i=0; i<n; i++){
             for(int j: adj.get(i)){
-                inDegrees[i]++;
+                inDegrees[j]++;
             }
         }
 
