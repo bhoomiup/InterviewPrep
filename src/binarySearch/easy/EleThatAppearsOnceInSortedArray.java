@@ -41,11 +41,11 @@ public class EleThatAppearsOnceInSortedArray {
         int l = 0;
         int h = nums.length-1;
         int m;
+        if(nums[0]!=nums[1]) return nums[0];
+        if(nums[h]!=nums[h-1]) return nums[h];
         while (l<=h){
             m = (l+h)/2;
-            if(m==0 && nums[m+1]!=nums[0]) return nums[0];
-            else if(m==nums.length-1 && nums[m-1]!=nums[m]) return nums[m];
-            else if(nums[m+1]!=nums[m] && nums[m-1]!=nums[m]) return nums[m];
+            if(nums[m+1]!=nums[m] && nums[m-1]!=nums[m]) return nums[m];
             else if (nums[m-1]!=nums[m]) {
                 if((m-l)%2==0) l=m+2;
                 else h = m-1;

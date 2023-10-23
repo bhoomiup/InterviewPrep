@@ -27,9 +27,6 @@ public class SearchInRotatedSortedArray {
             }
         }
 
-        System.out.println(l);
-        System.out.println(h);
-
         while (l<=h){
             int mid = (l+h)/2;
             if(A[mid]==key){
@@ -89,7 +86,7 @@ public class SearchInRotatedSortedArray {
         int h = nums.length-1;
         int m;
 
-        while (nums[l]>nums[h]){
+        while (l<=h){
             m = (l+h)/2;
             if(nums[m]==target) return m;
             if(nums[l]<=nums[m]){

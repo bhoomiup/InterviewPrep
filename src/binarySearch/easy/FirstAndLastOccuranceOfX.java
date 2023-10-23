@@ -64,8 +64,6 @@ public class FirstAndLastOccuranceOfX {
         while(l<=h){
             int m = (l+h)/2;
             if(nums[m]==target){
-                System.out.println(nums[m]);
-                System.out.println(m);
                 if(m==0 || nums[m-1]<nums[m]) {
                     op[0]=m;
                     break;
@@ -75,14 +73,11 @@ public class FirstAndLastOccuranceOfX {
             }else if(nums[m]<target) l=m+1;
             else h=m-1;
         }
-        System.out.println();
         l=0;
         h=nums.length-1;
         while(l<=h){
             int m = (l+h)/2;
             if(nums[m]==target){
-                System.out.println(nums[m]);
-                System.out.println(m);
                 if(m==nums.length-1 || nums[m+1]>nums[m]) {
                     op[1]=m;
                     break;

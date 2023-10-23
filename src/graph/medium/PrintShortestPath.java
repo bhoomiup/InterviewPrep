@@ -44,14 +44,15 @@ public class PrintShortestPath {
             }
         }
 
+        int node = n;
         List<Integer> shortestPath = new ArrayList<>();
         if(dist[n]==(int)(1e9)) {
             shortestPath.add(-1);
             return shortestPath;
         }
 
-        int node = n;
-        while (parent[node]!=node){
+
+        while (dist[node]!=0){
             shortestPath.add(node);
             node = parent[node];
         }

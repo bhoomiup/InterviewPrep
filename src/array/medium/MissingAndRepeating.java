@@ -10,7 +10,6 @@ public class MissingAndRepeating {
         for(int i=0; i<arr.length; i++){
             arr[Math.abs(arr[i])-1] = -1*arr[Math.abs(arr[i])-1];
         }
-        Arrays.stream(arr).forEach(c-> System.out.print(c+","));
         int temp1 = 0;
         int temp2 = 0;
         for (int i=0; i<arr.length; i++){
