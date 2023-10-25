@@ -14,13 +14,9 @@ public class CelebrityProb {
         {
             int a = s.pop();
             int b = s.pop();
-            System.out.println(a);
-            System.out.println(b);
-            System.out.println();
             if(M[a][b]==1) s.add(b);
             else s.add(a);
         }
-        System.out.println(s.peek());
         int posCeleb = s.peek();
         for(int i = 0; i<n ; i++){
             if(M[posCeleb][i]==1) return -1;
