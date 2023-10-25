@@ -37,7 +37,7 @@ public class test1 {     /*
         List<Integer> sortedList = list.stream().sorted().limit(3).collect(Collectors.toList());
         System.out.println(sortedList);
 
-
+        System.out.println("test");
     }
 }
 
