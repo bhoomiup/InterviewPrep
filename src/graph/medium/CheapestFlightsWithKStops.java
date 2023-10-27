@@ -31,7 +31,7 @@ public class CheapestFlightsWithKStops {
             int currStops = curr[0];
             int currNode = curr[1];
             int currCost = curr[2];
-            if(currStops>k+1) break;
+            if(currStops>k) break;
             for(Pair i: adj.get(currNode)){
                 if(currCost+i.cost<cost[i.node]){
                     cost[i.node] = currCost+i.cost;
