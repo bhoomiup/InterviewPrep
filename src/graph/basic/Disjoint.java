@@ -5,9 +5,9 @@ import java.util.List;
 
 public class Disjoint {
 
-    List<Integer> rank = new ArrayList<>();
-    List<Integer> parent = new ArrayList<>();
-    List<Integer> size = new ArrayList<>();
+    public List<Integer> rank = new ArrayList<>();
+    public List<Integer> parent = new ArrayList<>();
+    public List<Integer> size = new ArrayList<>();
 
     public Disjoint(int n) {
         // Intialise your data structure here.
