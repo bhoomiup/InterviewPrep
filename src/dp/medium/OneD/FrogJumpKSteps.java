@@ -1,4 +1,4 @@
-package dp.medium;
+package dp.medium.OneD;
 
 public class FrogJumpKSteps {
 
