@@ -30,6 +30,7 @@ public class FourSum {
                 }
             }
         }
+        op.get(0).sort(Comparator.comparingInt(x -> x));
         return op;
     }
 

@@ -20,14 +20,13 @@ public class frequencySortChars {
         PriorityQueue<Data> pq = new PriorityQueue<>((x1, x2)->x2.count-x1.count);
 
         for(char c: s.toCharArray()) mp.put(c, mp.getOrDefault(c, 0)+1);
-
         for(Map.Entry<Character, Integer> c: mp.entrySet()) {
             pq.add(new Data(c.getKey(), c.getValue()));
         }
 
         StringBuilder op = new StringBuilder();
 
-        while(!(pq.size() ==0)){
+        while(!(pq.isEmpty())){
             Data temp = pq.poll();
             while(temp.count>0){
                 op.append(temp.character);
